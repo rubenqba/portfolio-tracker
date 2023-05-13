@@ -1,4 +1,13 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {}
+const nextConfig = {
+  reactStrictMode: true,
+  output: 'standalone',
+  images: {
+    domains: ['avatars.githubusercontent.com', 'avatar.vercel.sh']
+  },
+  experimental: {
+    typedRoutes: true,
+  },
+}
 
-module.exports = nextConfig
+module.exports = nextConfig;
